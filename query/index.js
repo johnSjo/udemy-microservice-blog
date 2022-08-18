@@ -64,7 +64,7 @@ app.listen(4002, async () => {
   console.log('Query.API is listening to port 4002');
 
   const res = await axios
-    .get(`http://localhost:4005/events`)
+    .get(`http://event-bus-srv:4005/events`)
     .catch((error) => console.error(error));
 
   res.data.forEach(({ type, data }) => {

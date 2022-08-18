@@ -8,7 +8,7 @@ export default function PostCreate() {
     event.preventDefault();
 
     await axios
-      .post('http://localhost:4000/posts', { title })
+      .post('http://post.com/posts/create', { title })
       .catch((error) => console.error(error));
 
     setTitle('');

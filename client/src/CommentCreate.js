@@ -8,7 +8,7 @@ export default function CommentCreate({ postId }) {
     event.preventDefault();
 
     await axios
-      .post(`http://localhost:4001/posts/${postId}/comments`, {
+      .post(`http://post.com/posts/${postId}/comments`, {
         content,
       })
       .catch((error) => console.error(error));
